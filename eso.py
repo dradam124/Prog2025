@@ -20,4 +20,4 @@ print(szamok)
 jatek_szam=0
 nemndb=0
 
-kszam= random.szamok
+kszam= random.szamok    
