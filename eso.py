@@ -20,4 +20,33 @@ print(szamok)
 jatek_szam=0
 nemndb=0
 
-kszam= random.szamok    
+kszam = szamok[random.randint(0, len(szamok))]
+
+tip= input("kerek egy egesz szamot")
+
+while(not tip.isdecimal()):
+    print("egesz zam")
+    tip= input("kerek egesz szam [1-100]")
+
+tip=int(tip)
+
+if (tip < kszam):
+    print("big")
+elif (tip > kszam):
+    print("smol")
+
+while(tip != kszam):
+    tip= input("kerek egesz szam [1-100]")
+    
+    while(not tip.isdecimal()):
+        print("egesz zam")
+    tip= input("kerek egesz szam [1-100]")
+
+    tip=int(tip)
+   
+    if(tip<kszam):
+        print("nagyob")
+    elif (tip>kszam):
+        print("kisebb")
+
+print("jo vagy fiam")
